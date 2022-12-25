@@ -1,5 +1,6 @@
 # Opioid Transactions in the United States
-This repository contains tools to subset and analyze the opioid transactions in the United States.
+This repository contains tools to subset and analyze the opioid transactions in the United States. Requirements for running this program
+can be found in the following file: requirements.txt
 
 ## Data
 Data for opioid transactions in the United States from 2006 to 2014 is publicly available through court order. 
