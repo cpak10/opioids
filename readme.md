@@ -8,9 +8,12 @@ This data can be found at the following link: https://www.slcg.com/opioid-data/
 
 The full transaction data is approximately 500 million observations and over 200 GB in size.
 
+Total MME for a record in this data is calculated as follows:
+* MME = dosage_unit * dos_str * mme_conversion_factor (https://digitalcommons.coastal.edu/etd/120/)
+
 ## Deployment
 * subset_data.py: 
-This script assumes that the ARCOS data referenced above is downloaded and a connection to a MySQL server is ready. 
 The script will filter the ARCOS data and commit the data into a new table in MySQL. 
+This script assumes that the ARCOS data referenced above is downloaded and a connection to a MySQL server is ready. 
 The file path for the ARCOS data will need to be updated based on local save location. 
 Additionally, the batch size for the pandas loop may need to be updated based on local RAM availabilities.
